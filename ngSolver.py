@@ -185,7 +185,7 @@ def amendedLine(line):
 	else: line=line[:lst[3]]+'"unknown"'+line[lst[4]:]
 	return line
 
-for line in sys.stdin: print(amendedLine(line)) 
+for line in sys.stdin: print(amendedLine(line.rstrip())) 
 
 exit()
 
