@@ -6,7 +6,7 @@
 
 # SYNOPSIS
 
-# cat input.csv| PYTHONPATH=${PYTHONPATH}:$z3path/bin/python/ LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$z3path/bin/ python $thisfile
+# cat input.csv| PYTHONPATH=${PYTHONPATH}:$z3path/bin/python/ LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$z3path/bin/ Z3_LIBRARY_PATH=${Z3_LIBRARY_PATH}:$z3path/bin/ python $thisfile
 # where $z3path/bin/ is the directory containing libz3.so and $z3path/bin/python/ the directory containing z3/z3.py.
 
 # The resulting amended input.csv will be printed on stdout, hence this program acts as a filter.
